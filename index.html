@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="nav-bar.css">
+
+    <title>POS System</title>
+</head>
+<style>
+    .dashboard {
+        background-color: #1A3C6B;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /* Center content */
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+
+    .dashboard h1 {
+        font-size: 48px;
+        margin-bottom: 100px;
+    }
+
+    .dashboard .btn-custom {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 1); /* Adjusted the shadow */
+        font-size: 24px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        margin: 20px; /* General margin */
+        display: inline-block;
+        transition: box-shadow 0.3s ease-in-out;
+        text-align: center; /* Center the text */
+    }
+
+    .dashboard i {
+        font-size: 50px;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .div-gap1  {
+        margin-bottom: 75px; /* Adjust this value for more or less gap */
+    }
+    .btn-custom + .btn-custom {
+        margin-left: 300px; /* Adjust this value to increase or decrease the horizontal gap */
+    }
+</style>
+
+<body>
+<div id="dashboard" class="dashboard">
+    <h1>Dash Board</h1>
+    <div class="div-gap1">
+        <a href="page/main_customer.html" class="btn btn-custom">
+            <br>
+            <i class="fas fa-user"></i>
+            Customer
+        </a>
+
+        <a href="page/main_item.html" class="btn btn-custom">
+            <br>
+            <i class="fas fa-box"></i>
+            Item
+        </a>
+    </div>
+    <div class="div-gap2">
+        <a href="page/order.html" class="btn btn-custom">
+            <i class="fas fa-shopping-cart"></i>
+            Place Order
+        </a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
